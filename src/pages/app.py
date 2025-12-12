@@ -1,3 +1,4 @@
+from Data.dataframe import dataframe
 import polars as pl
 import matplotlib.pyplot as plt
 import streamlit as st
@@ -7,9 +8,7 @@ from pathlib import Path
 
 
 def extract():
-
-    archive = "Data/world_development_indicators.csv"
-    df = pl.read_csv(archive)
+    df = dataframe()
 
     st.title("World development indicators")
 

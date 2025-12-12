@@ -5,7 +5,7 @@ import streamlit as st
 def industrialization():
     df = dataframe()
 
-    st.title("### Indicators of industrialization")
+    st.title("Indicators of industrialization")
     st.write("head", df.head())
 
 industrialization()
